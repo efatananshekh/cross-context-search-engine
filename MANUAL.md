@@ -1,18 +1,18 @@
-================================================================================
-                CUSTOMER DASHBOARD LAUNCHER - USER MANUAL
-================================================================================
 
-================================================================================
+                CUSTOMER DASHBOARD LAUNCHER - USER MANUAL
+
+
+
 1. OVERVIEW
-================================================================================
+
 
 Customer Dashboard Launcher is a Chrome extension that bridges your case 
 management system with a dashboard. It extracts phone numbers from case pages 
 and customer center pages, then sends them to a dashboard URL as a parameter.
 
-================================================================================
+
 2. WHAT YOU NEED TO KNOW BEFORE INSTALLATION
-================================================================================
+
 
 You need to know FOUR things:
 
@@ -23,9 +23,9 @@ You need to know FOUR things:
 | Customer Path | The URL path for customer center | customer-center |
 | Dashboard URL | Where to send the phone number | http://YOUR_IP:3000/dashboard/ID |
 
-================================================================================
+
 3. INSTALLATION
-================================================================================
+
 
 3.1 Automatic Configuration (Windows)
 
@@ -56,9 +56,9 @@ Open background.js and replace:
 3. Click "Load unpacked"
 4. Select the extension folder
 
-================================================================================
+
 4. DAILY USAGE
-================================================================================
+
 
 1. Open Chrome
 2. Navigate to any case page or customer center page
@@ -68,9 +68,9 @@ Open background.js and replace:
 6. Switch to another case tab
 7. Dashboard updates automatically
 
-================================================================================
+
 5. TROUBLESHOOTING
-================================================================================
+
 
 Problem: Dashboard does not open
 Solution: Verify dashboard URL is correct in background.js
@@ -84,17 +84,17 @@ Solution: Close all dashboard tabs and refresh the case page
 Problem: configure.bat fails
 Solution: Right-click and select "Run as Administrator"
 
-================================================================================
+
 6. CUSTOMIZATION
-================================================================================
+
 
 Change phone pattern: Edit content.js patterns array
 Change dashboard tab: Edit background.js "tab" parameter
 Change update delay: Edit background.js UPDATE_DELAY variable
 
-================================================================================
+
 7. VERSION HISTORY
-================================================================================
+
 
 Version 1.1 - Current
 - Supports both case view and customer center pages
@@ -102,6 +102,5 @@ Version 1.1 - Current
 
 Version 1.0 - Initial release
 
-================================================================================
+
 END OF MANUAL
-================================================================================
