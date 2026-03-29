@@ -1,18 +1,18 @@
-================================================================================
-                    CUSTOMER DASHBOARD LAUNCHER - README
-================================================================================
 
-================================================================================
+                    CUSTOMER DASHBOARD LAUNCHER - README
+
+
+
 PROJECT OVERVIEW
-================================================================================
+
 
 Customer Dashboard Launcher is a Chrome extension that extracts phone numbers 
 from case view pages and customer center pages, then sends them to a dashboard 
 URL for automatic customer data loading.
 
-================================================================================
+
 WHAT YOU NEED
-================================================================================
+
 
 You need four things:
 
@@ -21,9 +21,9 @@ You need four things:
 3. CUSTOMER CENTER PATH - The URL path for customer pages
 4. DASHBOARD URL - Where to SEND the phone number TO
 
-================================================================================
+
 QUICK INSTALLATION
-================================================================================
+
 
 STEP 1: Download all files to a folder
 
@@ -41,19 +41,19 @@ STEP 4: Load in Chrome:
         - Click "Load unpacked"
         - Select the folder
 
-================================================================================
+
 HOW IT WORKS
-================================================================================
+
 
 1. You open a case page
 2. Extension finds the phone number in the shipping/delivery section
-3. Extension updates the dashboard URL with ?phone=NUMBER
+3. Extension updates the dashboard URL with ?phoneNUMBER
 4. Dashboard shows that customer's data
 5. When you switch tabs, dashboard updates automatically
 
-================================================================================
+
 FILES IN THIS PACKAGE
-================================================================================
+
 
 LICENSE              - MIT License
 README.txt           - This quick start guide
@@ -63,6 +63,5 @@ manifest.json        - Extension configuration
 background.js        - Service worker (runs in background)
 content.js           - Content script (extracts phone numbers)
 
-================================================================================
+
 For complete documentation, see MANUAL.txt
-================================================================================
