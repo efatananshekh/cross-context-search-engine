@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Customer Dashboard Launcher",
+  "version": "1.1",
+  "description": "Automatically updates dashboard when viewing different customer order pages",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://YOUR_DOMAIN_HERE/YOUR_CASE_PATH_HERE/*",
+    "https://YOUR_DOMAIN_HERE/YOUR_CUSTOMER_PATH_HERE/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://YOUR_DOMAIN_HERE/YOUR_CASE_PATH_HERE/*",
+        "https://YOUR_DOMAIN_HERE/YOUR_CUSTOMER_PATH_HERE/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
